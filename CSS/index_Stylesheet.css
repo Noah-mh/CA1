@@ -1,0 +1,106 @@
+/* Encoding Charset*/
+@charset "utf-8";
+
+/* 
+h1,
+h3
+• Align text center
+*/
+h1,
+h3 {
+    text-align: center;
+}
+
+/* 
+.grid1,
+.grid2
+• Create a grid layout
+• Create 3 columns and make rows auto to create more new rows if needed
+• Make the gap between columns to be 50px
+• Justify Content center to make the grid centered
+*/
+.grid1,
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    justify-content: center;
+}
+/* 
+.grid1
+• Set top padding of grid1 to be 10px
+ */
+.grid1 {
+    padding-top: 10px;
+}
+/* 
+.profile img
+• Make sure the height of profile is not exceeded 200px
+• Make the radius of the boder to be 50%
+*/
+.profile img {
+    max-height: 200px;
+    border-radius: 50%;
+
+}
+/* 
+.shortIntro
+• Make the element span 2 grid spaces*/
+.shortIntro {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* 
+.valueText
+• Make the element span 2 grid spaces */
+
+.valueText {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* 
+.grid3
+• Create a grid layout
+• Create 3 columns and 2 rows
+• Make the gap between columns to be 60px
+• Justify Content center to make the grid centered
+ */
+
+.grid3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 60px;
+    justify-content: center;
+}
+
+/* 
+.valueImg img,
+.interestImg1 img,
+.interestImg2 img,
+.interestImg3 img
+• Make sure the height of profile is not exceeded 150px
+• Make the radius of the boder to be 20px
+*/
+
+.valueImg img,
+.interestImg1 img,
+.interestImg2 img,
+.interestImg3 img {
+    max-height: 150px;
+    border-radius: 20px;
+}
+
+/* 
+.personality
+• Create a grid layout
+• Create 1 columns
+• Justify Content center to make the grid centered */
+
+.personality {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+
+}

@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+/* 
+p
+• Align text center
+• Set the font size 1.5em
+*/
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+/* 
+.thank
+• Set the margin-top to be 120px
+*/
+.thank {
+    margin-top: 120px;
+}
+
+/* 
+label
+• Set the padding to be 6px
+*/
+
+label {
+    padding: 6px;
+}
+
+/* 
+input
+• Make input display flex 
+• Set padding to be 5px
+• Set the radius of the border to be 10px
+• Border radius of 2px and #ead6bb solid
+• Make all elements center
+ */
+
+input {
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #ead6bb;
+    justify-content: center;
+}
+
+/* 
+input#Name,
+input#Email,
+input#phNumber,
+input#queries
+• Set width 70 em
+• Set height 2em
+*/
+
+input#Name,
+input#Email,
+input#phNumber,
+input#queries {
+    width: 70em;
+    height: 2em;
+}
+
+/*
+input#queries
+• Set width 100px
+*/
+input#queries {
+    height: 100px;
+}
+
+/*
+#myForm
+• Set padding-left to be 2em 
+ */
+
+#myForm {
+    padding-left: 2em;
+}
+
+/* 
+• Make input display flex 
+• Make all elements center
+• Set margin to be 25px
+• Set the gap between elements to be 100px
+*/
+
+.form,
+.Submit {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    gap: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* ...................
+    Rating Star Styles
+   ................... */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 1.5em;
+    font-size: 3vw;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
